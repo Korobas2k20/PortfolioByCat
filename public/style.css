@@ -1,0 +1,267 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    position: relative;
+    background: #1d1d1d;
+    color: white;
+    font-family: "roboto", sans-serif;
+}
+
+/* navbar*/
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #1d1d1d;
+    padding: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+}
+
+.brad{
+    text-transform: capitalize;
+    font-weight: 500;
+
+}
+
+.link-container{
+    display: flex;
+    list-style: none;
+}
+
+.link{
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.link:hover:not(.active){
+    opacity: 0.7;
+}
+
+.link.active::before,
+.seperator::before{
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+}
+
+.link.active::after,
+.seperator::after{
+    content: ' ';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: white;
+}
+
+/* home section */
+
+.home{
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    height: auto;
+    margin-top: 60px;
+    padding: 0 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hero-content{
+    width: 50%;
+}
+
+.hero-heading{
+    font-size: 5rem;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.highlight{
+    color: #ff3559;
+}
+
+.profession{
+    width: fit-content;
+    display: block;
+    margin: 10px 0 20px;
+    margin-left: auto;
+    text-transform: capitalize;
+    position: relative;
+    padding: 10px 20px;
+    color: #1d1d1d;
+    z-index: 2;
+}
+
+.profession::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e3e3e3;
+    z-index: -1;
+    transform: skewX(10deg);
+}
+
+.profession::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 100px;
+    height: 2px;
+    background: #e3e3e3;
+}
+
+.info{
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.btn{
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 50px;
+    background: #ff3559;
+    text-transform: capitalize;
+    color: white;
+    border: 0;
+}
+
+/* About section */
+
+.about{
+    width: 100%;
+    height: auto;
+    padding: 50px 10vw;
+}
+
+.heading{
+    text-align: center;
+    font-weight: 500;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+}
+
+.sub-heading{
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px;
+    opacity: 0.7;
+}
+
+.seperator{
+    width: 25%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.about-me-container{
+    margin: 150px 0 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-gap: 50px;
+}
+
+.left-col,
+.right-col{
+    position: relative;
+}
+
+.left-col::before{
+    content: 'Its me';
+    text-transform: capitalize;
+    position: absolute;
+    right: 30px;
+    top: -20px;
+}
+
+.left-col::after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: 80px;
+    width: 100px;
+    height: 2px;
+    background: white;
+    transform-origin: right;
+    transform: rotate(-30deg);
+}
+
+.about-image{
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.25);
+}
+
+.about-para{
+    font-size: 1.2rem;
+    font-size: 300;
+    line-height: 35px;
+    margin-bottom: 40px;
+}
+
+.skill-container{
+    position: relative;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+
+}
+
+.skill-card{
+    height: 200px;
+    border-radius: 10px;
+    border: 1px solid #464646;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.skill{
+    font-size: 2rem;
+    color: #464646;
+    line-height: 200px;
+}
+.skill-card:hover{
+    background: var(--bg);
+}
+.skill-card:hover .skill{
+    color: white;
+
+}
+
+.skill-card.large{
+    grid-column: 2 span;
+}
