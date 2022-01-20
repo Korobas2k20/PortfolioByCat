@@ -2,7 +2,7 @@ const express = require('express');
 const path = require('path');
 const nodemailer = require('nodemailer');
 const dotenv = require('dotenv');
-
+const PORT = process.env.PORT || 80
 dotenv.config();
 
 let initialPath = path.join(__dirname,"public");
@@ -15,7 +15,7 @@ app.get("/",(req,res)=>{
     res.sendFile(path.join(initialPath,"index.html"));
 })
 //Сообщение об велючении сервера
-app.listen("8000",() => {
+app.listen(PORT,() => {
     console.log("listening...");
 })
 
