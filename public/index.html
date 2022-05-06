@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сайт для Web-design</title>
+    <title>Андрей Стороженко</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- 1 nav -->
     <nav class="navbar">
-        <h1 class="brand">Ремонт ПК и ноутбуков</h1> <img src="img/logo.png" alt="logo" style="position: absolute; left: 130px;">
+
+        <h1 class="brand">Junior Верстальщик</h1> 
+        <img src="img/logo.png" alt="logo" style="position: absolute; left: 130px;">
+
         <ul class="link-container">
             <li class="links-item"><a href="#" class="link active">Начало</a></li>
             <li class="links-item"><a href="#about-section" class="link">Описание</a></li>
             <li class="links-item"><a href="#skills-section" class="link">Умения</a></li>
-            <li class="links-item"><a href="#project-section" class="link">Хобби</a></li>
+            <li class="links-item"><a href="#project-section" class="link">Проекты</a></li>
             <li class="links-item"><a href="#contact-section" class="link">Связаться</a></li>
 
             <li class="links-item">
-                <div id="finevision_banner" onclick="finevision.activate_navbar()"
-                    style="cursor: pointer; z-index: 9999; background: rgb(255, 255, 255); float: right; position: fixed; top: 10px; left: auto; right: 60px;">
-                    <img width="109" src="https://finevision.ru/static/banner2.jpg">
-                    <script src="https://finevision.ru/static/js/finevision_banner.js"></script>
-                </div>
+                <img id="specialButton" style="cursor:pointer; position: absolute; right: 80px; top: 5px;" src="img/version.jpg" width="100px" height="50px" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
             </li> 
             
         </ul>
@@ -33,13 +38,13 @@
     <!-- 2 home section-->
     <section class="home">
         <div class="hero-content">
-            <h1 class="hero-heading"><span class="highlight">Привет!, </span>Я Андрей!</h1>
-            <p class="profession">Специалист по ПК</p>
-            <p class="info">Мой стаж работы насчитывает более 17 лет! Я чиню компьютеры и ноутбуки с  3 лет, как только научился делать сальто.
+            <h1 class="hero-heading"><span class="highlight">Привет! </span>Я Андрей!</h1>
+            <p class="profession">Junior Верстальщик</p>
+            <p class="info">Нахожусь в поиске стажировки по направлению Fronted-разработчик, разработки AR/VR-приложений, QA-инженер. 
             </p>
             <a href="#contact-section" class="btn">Связаться со мной</a>
         </div>
-        <img src="img/hero.jpg" alt="Hero" class="image">
+        <img src="img/hero.jpg" alt="Hero" class="image" width="700px" height="600px">
     </section>
 
     <!-- 3 About section -->
@@ -49,88 +54,86 @@
         <div class="seperator"></div>
         <div class="about-me-container">
             <div class="left-col">
-                <img src="img/hero2.jpg" width="450px" height="550px" class="about-image" alt="">
+                <img src="img/hero2.jpg" width="600px" height="500px" class="about-image" alt="">
             </div>
             <div class="right-col">
                 <p class="about-para">
-                    Ремонт компьютеров и ноутбуков. Вы не платите за выезд – только за выполненную работу! На рынке компьютерного сервиса уже более 8 лет. Имеется диплом и высшее образование 
-                     (наличие которого не допускает частых ошибок неопытных мастеров). Вы не платите за выезд – только за выполненную работу! 
-                     Выезд по всему городу Нижневартовск. ИНТЕРЕСУЕТ ЦЕНА? Звоните по телефону +79826666666: поломку и Ваш номер, ответ в течение 5 минут. ЗВОНИТЕ 
-                     ПН – ВС Работаю каждый день с 8 утра до 21 вечера. Ремонт в любое удобное для Вас время! ВЫЕЗД И ДИАГНОСТИКА – 0 РУБЛЕЙ
-                    Ремонт происходит в день обращения у Вас дома, на Ваших глазах!
+                    Я Андрей Стороженко из города Нижневартовска. Сейчас я учусь в Нижневартовском политехническом 
+                    колледже по специальности "Программирование в компьютерных системах" на 3 курсе. 
+                    Интересуюсь версткой сайтов и разработкой AR/VR-приложений. Из моих достижений:
+                    <br> <br>
+                    Победитель Окружной школы цифрового искусства, 2022 г. <br>
+                    Прошел интенсивную программу Открытого университета Сколково по генерации идей технологический проектов «SkLab. Югра», 2022 г. <br>
+                    Лауреат премии Главы города Нижневартовска талантливой студенческой молодежи, 2021 г.<br>
+                    Прошёл онлайн-специализацию «Virtual Reality» от University of London, 2022 г.<br>
+                    Прошёл сертификацию «Responsive Web Design» от FreeCodeCamp, 2022 г.<br>
+                    Победитель в номинации «Профессионал» конкурса «Все самое позитивное», г. Нижневартовск, 2021 г.<br>
+                    Участник добровольческого движения Нижневартовского политехнического колледжа<br>
                 </p>
                 <a href="#contact-section" class="btn">Написать мне</a>
             </div>
         </div>
 
-        <h2 class="heading" id="skills-section">Что я умею <span class="highlight"> делать?</span></h2>
+        <h2 class="heading" id="skills-section">Мои <span class="highlight"> навыки</span></h2>
         <div class="seperator"></div>
         <div class="skill-container" >
             <div class="skill-card" style="--bg: #f06529">
-                <p class="skill">Очистка ПК</p>
+                <p class="skill">HTML</p>
             </div>
             <div class="skill-card" style="--bg: green">
-                <p class="skill">Установка драйверов</p>
+                <p class="skill">CSS</p>
             </div>
             <div class="skill-card large" style="--bg: red">
-                <p class="skill">Установка лицензионной ОС</p>
+                <p class="skill">Чуть-чуть JavaScript</p>
             </div>
             <div class="skill-card large" style="--bg: orange">
-                <p class="skill">Только качественная работа</p>
+                <p class="skill">Unity AR&VR</p>
             </div>
             <div class="skill-card" style="--bg: blue">
-                <p class="skill">Ремонт ПК</p>
+                <p class="skill">Git</p>
             </div>
             <div class="skill-card" style="--bg: pink">
-                <p class="skill">Ремонт ноутбуков</p>
+                <p class="skill">Руководить проектами</p>
             </div>
         </div>
     </section>
 
     <!-- 4 Project Section -->
     <section class="project" id="project-section">
-        <h2 class="heading">Мои <span class="highlight">Хобби</span></h2>
-        <p class="sub-heading">В данной секции вы можете увидеть чем я занимаюсь в свободное время. </p>
+        <h2 class="heading">Мои <span class="highlight">проекты</span></h2>
+        <p class="sub-heading">В данной секции вы можете увидеть мои проекты. </p>
         <div class="seperator"></div>
 
     <div class="project-container">
         <div class="project-card">
-            <a href="/sites/marks.html">
-            <img src="img/марки.jpg" alt="First">
+            <a href="https://korobas2k20.github.io/TajamCreativeAgency/" target="_blank">
+            <img src="img/Tajam.png" alt="First">
             <div class="content">
-                <h1 class="project-name">Собирать марки</h1>
+                <h1 class="project-name">Tajam <br> креативное агенство </h1>
             </div>
         </a>
         </div>
         <div class="project-card">
-            <a href="/sites/volleybol.html">
-            <img src="img/волейбол.jpg" alt="Two">
+            <a href="https://korobas2k20.github.io/Portfolio/" target="_blank">
+            <img src="img/port.png" alt="First">
             <div class="content">
-                <h1 class="project-name">Волейбол</h1>
+                <h1 class="project-name">Первое <br> портфолио</h1>
             </div>
         </a>
         </div>
         <div class="project-card">
-            <a href="/sites/travel.html">
-            <img src="img/путешествия.png" alt="Three">
+            <a href="https://drive.google.com/file/d/1ZDSBwQ5SYddO4jswV9Qxysmuocn5a0Us/view?usp=sharing" target="_blank">
+            <img src="img/vr.png" alt="First">
             <div class="content">
-                <h1 class="project-name">Путешествовать</h1>
+                <h1 class="project-name">Интеграция инструментов VR</h1>
             </div>
         </a>
         </div>
         <div class="project-card">
-            <a href="/sites/english.html">
-            <img src="img/инглиш.jpg" alt="Four">
+            <a href="https://docs.google.com/presentation/d/1ywktBnFZsN7cWhNIAnmk6XTnLZRdJIPq/edit?usp=sharing&ouid=103637791820788717354&rtpof=true&sd=true" target="_blank">
+            <img src="img/ar.png" alt="First">
             <div class="content">
-                <h1 class="project-name">Изучать англ.язык</h1>
-            </div>
-        </a>
-        </div>
-        <div class="project-card">
-            <a href="/sites/dev.html">
-            <img src="img/dev.jpg" alt="Five">
-            <div class="content">
-                <h1 class="project-name">Верстать сайты</h1>
+                <h1 class="project-name">Твой Любимый Гид</h1>
             </div>
         </a>
         </div>
@@ -152,7 +155,7 @@
             <button class="btn contact-btn">Отправить</button>
         </div>
     </section>
-<footer class="footer">© Adam Grella. Мой номер:<a style="position: absolute; left: 56%; text-decoration: none; color: white;" href="tel:+79826666666">+79826666666</a>
+<footer class="footer">© Adam Grella. Мой номер:<a style="position: absolute; left: 56%; text-decoration: none; color: white;" href="tel:+79821369810">+79821369810</a>
     <script src="js/app.js"></script>
 </footer>
 </body>

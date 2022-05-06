@@ -24,7 +24,7 @@ app.post('/mail', (req, res) => {
     const { firstname, lastname, email, msg } = req.body;
 
     const transporter = nodemailer.createTransport({
-        service: 'mail.ru',
+        service: 'gmail.com',
         auth: {
             user: process.env.EMAIL,
             pass: process.env.PASSWORD
@@ -32,18 +32,18 @@ app.post('/mail', (req, res) => {
     })
 
     const mailOptions = {
-        from: 'adamgrella@mail.ru',
-        to: 'adamgrella@mail.ru',
-        subject: 'Postfolio',
-        text: `First name: ${firstname}, \nLast name: ${lastname}, \nEmail: ${email}, \nMessage: ${msg}`
+        from: 'pkakasein@gmail.com',
+        to: 'pkakasein@gmail.com',
+        subject: 'Новое сообщение на сайте!',
+        text: `Имя: ${firstname}, \nФамилия: ${lastname}, \nПочта: ${email}, \nСообщение: ${msg}`
     }
 
     transporter.sendMail(mailOptions, (err, result) => {
         if (err){
             console.log(err);
-            res.json('opps! it seems like some error occured plz. try again.')
+            res.json('Судя по всему, случилась какая-то проблема. Пожалуйста, напишите мне - pkakasein@gmail.com')
         } else{
-            res.json('thanks for e-mailing me. I will reply to you within 2 working days');
+            res.json('Спасибо что написали мне! Скоро я вам отвечу');
         }
     })
 })

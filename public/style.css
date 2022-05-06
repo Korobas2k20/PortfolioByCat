@@ -203,26 +203,6 @@ body{
     position: relative;
 }
 
-.left-col::before{
-    content: 'Это я!';
-    text-transform: capitalize;
-    position: absolute;
-    right: 30px;
-    top: -20px;
-}
-
-.left-col::after{
-    content: '';
-    position: absolute;
-    top: -10px;
-    right: 80px;
-    width: 100px;
-    height: 2px;
-    background: white;
-    transform-origin: right;
-    transform: rotate(-30deg);
-}
-
 .about-image{
     border-radius: 10px;
     box-shadow: 0 10px 10px rgba(0,0,0,0.25);
